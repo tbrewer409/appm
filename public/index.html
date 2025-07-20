@@ -9,36 +9,32 @@
 </head>
 <body class="ocean-theme">
 <div class="container mt-5">
-    <h1 class="text-center">RunPod Application Manager</h1>
-    <div class="table-responsive ocean-table mx-auto">
-        <table class="table table-bordered table-hover">
-            <thead class="thead-dark">
-            <tr>
-                <th>Application</th>
-                <th>Action</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Forge</td>
-                <td>
-                    <button id="startForge" class="btn btn-success">Start</button>
-                    <button id="stopForge" class="btn btn-danger">Stop</button>
-                    <button id="restartForge" class="btn btn-warning">Restart</button>
-                </td>
-            </tr>
-            <tr>
-                <td>ComfyUI</td>
-                <td>
-                    <button id="startComfy" class="btn btn-success">Start</button>
-                    <button id="stopComfy" class="btn btn-danger">Stop</button>
-                    <button id="restartComfy" class="btn btn-warning">Restart</button>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+    <h1 class="text-center mb-4">RunPod Application Manager</h1>
+
+    <div class="row text-center">
+        <div class="col-md-6 mb-4">
+            <div class="card bg-dark text-white shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Forge</h5>
+                    <button id="startForge" class="btn btn-success m-1">Start</button>
+                    <button id="stopForge" class="btn btn-danger m-1">Stop</button>
+                    <button id="restartForge" class="btn btn-warning m-1">Restart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card bg-dark text-white shadow">
+                <div class="card-body">
+                    <h5 class="card-title">ComfyUI</h5>
+                    <button id="startComfy" class="btn btn-success m-1">Start</button>
+                    <button id="stopComfy" class="btn btn-danger m-1">Stop</button>
+                    <button id="restartComfy" class="btn btn-warning m-1">Restart</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row mt-4">
+
+    <div class="row">
         <div class="col-md-6">
             <h5 class="text-center">Forge Logs</h5>
             <pre id="forgeLogs" class="log-viewer"></pre>
@@ -49,6 +45,7 @@
         </div>
     </div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/script.js"></script>
 </body>
