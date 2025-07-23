@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# Force ANSI color output in Forge logs (for pretty symbols and colors)
+export PYTHONUNBUFFERED=1
+export FORCE_COLOR=1
+export NODE_DISABLE_COLORS=0
+export TERM=xterm-256color
+
+
 : "${DEFAULT_F_ARGS:=--listen --port 3000 --enable-insecure-extension-access}"
 : "${F_ARGS:=}"
 FINAL_FORGE_ARGS="$DEFAULT_F_ARGS $F_ARGS"

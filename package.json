@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Ashley Kleynhans",
+  "author": "Timbo",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "ansi-to-html": "^0.7.1"
   }
 }

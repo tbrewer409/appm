@@ -22,14 +22,14 @@ $(document).ready(function() {
     const forgeSource = new EventSource('/logs/forge');
     forgeSource.onmessage = function(event) {
         const log = $('#forgeLogs');
-        log.append(event.data + '\n');
+        log.append(event.data + '<br>');
         log.scrollTop(log[0].scrollHeight);
     };
 
     const comfySource = new EventSource('/logs/comfyui');
     comfySource.onmessage = function(event) {
         const log = $('#comfyLogs');
-        log.append(event.data + '\n');
+        log.append(event.data + '<br>');
         log.scrollTop(log[0].scrollHeight);
     };
 });

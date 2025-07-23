@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# Force ANSI color output in Forge logs (for pretty symbols and colors)
+export PYTHONUNBUFFERED=1
+export FORCE_COLOR=1
+export NODE_DISABLE_COLORS=0
+export TERM=xterm-256color
+
+
 # Set default and overrideable arguments
 : "${DEFAULT_C_ARGS:=--listen 0.0.0.0 --port 7860 --extra-model-paths-config /workspace/comfyui/extra_model_paths.yaml}"
 : "${C_ARGS:=}"
